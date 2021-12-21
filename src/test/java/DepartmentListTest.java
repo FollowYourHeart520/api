@@ -57,7 +57,7 @@ public class DepartmentListTest {
                 .body("errcode",equalTo(60008));
     }
 
-    @Test
+    //@Test
     //汉字，需要utf8编码
     public void testCreateChinese() {
         dt.create("测试1","1")
@@ -75,7 +75,7 @@ public class DepartmentListTest {
                 .body("errcode",equalTo(60008));
     }
 
-    @Test
+    //@Test
     public void testUpdate(){
         String departmentname = "si";
         String name="si-test";
@@ -86,7 +86,7 @@ public class DepartmentListTest {
                 .body("errmsg",equalTo("updated"));
     }
 
-    @Test
+    //@Test
     public void testDelete(){
         String departmentname = "si";
         dt.create(departmentname,"1");
